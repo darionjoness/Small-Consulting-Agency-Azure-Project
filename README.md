@@ -1,16 +1,24 @@
-# Project Portfolio
+# Project Title
+This is the structure provided in the user request.
 
-This project portfolio showcases my skills, experiences, and projects related to Azure technologies, specifically framed around the Azure Administrator certification (AZ-104). It includes detailed documentation, screenshots, and results from my capstone project.
+## Directory Structure
+- /folder1
+  - file1.txt
+- /folder2
+  - file2.txt
+- README.md
 
-## Purpose
+## Description
+This project is a sample consulting agency application built on Azure.
 
-This portfolio serves to demonstrate my proficiency in Azure management, governance, and best practices within the context of real-world applications. As I work through the modules, I will be providing insights and learning outcomes that pertain to each section of the curriculum. 
+## Installation
+Instructions for installing the project.
 
-### Folder Structure
+## Usage
+Instructions for using the project.
 
-The following folder structure will be used to organize all related files, modules, and documentation:
+## Contributing
+Guidelines for contributing to the project.
 
-- az104-azure-administrator/
-  - modules/
-    - 08-capstone/
-      - README.md (Instructions for the capstone project, required sections, and submission guidelines)
+## License
+Information about the project's license.
