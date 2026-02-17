@@ -24,7 +24,6 @@ This project simulates a full production-ready Azure environment for **Contoso C
 | `az104-capstone/phase3-compute-app/` | App Service, Function App, Storage, private endpoints |
 | `az104-capstone/phase4-monitoring-alerting/` | Log Analytics, alerts, dashboards, KQL |
 | `bonus-challenges/` | IaC, CI/CD, cost optimization, DR plan |
-| `cleanup/` | Cleanup scripts and verification |
 
 ---
 
