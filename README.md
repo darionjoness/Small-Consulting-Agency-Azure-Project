@@ -1,16 +1,16 @@
 # Azure AZ-104 Capstone Project Portfolio 🚀
 
-This repository showcases my end‑to‑end Azure Administrator Capstone Project, demonstrating real‑world cloud engineering skills across governance, networking, compute, storage, monitoring, automation, and cost optimization.
+This repository showcases my end-to-end Azure Administrator Capstone Project, demonstrating real-world cloud engineering skills across governance, networking, compute, storage, monitoring, automation, and cost optimization.
 
-This project simulates a full production‑ready Azure environment for **Contoso Consulting**, following Microsoft best practices for:
+This project simulates a full production-ready Azure environment for **Contoso Consulting**, following Microsoft best practices for:
 
-- Security & Identity
-- High Availability
-- Cost Optimization
-- Monitoring & Alerting
-- Governance & Compliance
-- Infrastructure as Code
-- CI/CD Automation
+- Security & Identity  
+- High Availability  
+- Cost Optimization  
+- Monitoring & Alerting  
+- Governance & Compliance  
+- Infrastructure as Code  
+- CI/CD Automation  
 
 ---
 
@@ -30,13 +30,13 @@ This project simulates a full production‑ready Azure environment for **Contoso
 
 ## 🏗️ Project Overview
 
-This project builds a complete **three‑tier Azure environment**:
+This project builds a complete **three-tier Azure environment**:
 
-- **Web Tier** – App Service + App Gateway (WAF)
-- **App Tier** – Azure Function App
-- **Data Tier** – Storage Account with Private Endpoint
-- **Monitoring** – Log Analytics + Alerts + Dashboard
-- **Governance** – RBAC, Policies, Tags, Naming Standards
+- **Web Tier** – App Service + App Gateway (WAF)  
+- **App Tier** – Azure Function App  
+- **Data Tier** – Storage Account with Private Endpoint  
+- **Monitoring** – Log Analytics + Alerts + Dashboard  
+- **Governance** – RBAC, Policies, Tags, Naming Standards  
 
 ---
 
@@ -44,14 +44,14 @@ This project builds a complete **three‑tier Azure environment**:
 
 You will add screenshots for:
 
-- Resource groups with tags
-- Policy compliance
-- NSG rules
-- Effective routes
-- Web App + Function App URLs
-- Monitoring dashboard
-- Alerts firing
-- Cleanup verification
+- Resource groups with tags  
+- Policy compliance  
+- NSG rules  
+- Effective routes  
+- Web App + Function App URLs  
+- Monitoring dashboard  
+- Alerts firing  
+- Cleanup verification  
 
 Each phase folder includes a `/screenshots` directory.
 
@@ -68,3 +68,16 @@ Each phase folder includes a `/screenshots` directory.
 - CI/CD (GitHub Actions)
 - Cost Optimization & Advisor Review
 - Disaster Recovery Planning
+
+---
+
+## 👤 Author
+
+**Darion Jones**  
+Azure Cloud Engineer
+
+---
+
+## 📜 License
+
+This project is for educational and portfolio demonstration purposes.
