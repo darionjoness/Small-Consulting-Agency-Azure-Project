@@ -1,6 +1,6 @@
 # Azure AZ-104 Capstone Project Portfolio 🚀
 
-This repository showcases my end-to-end Azure Administrator Capstone Project, demonstrating real-world cloud engineering skills across governance, networking, compute, storage, monitoring, automation, and cost optimization.
+This repository showcases my end-to-end Azure Administrator Project, demonstrating real-world cloud engineering skills across governance, networking, compute, storage, monitoring, automation, and cost optimization.
 
 This project simulates a full production-ready Azure environment for **Contoso Consulting**, following Microsoft best practices for:
 
@@ -68,13 +68,6 @@ Each phase folder includes a `/screenshots` directory.
 - CI/CD (GitHub Actions)
 - Cost Optimization & Advisor Review
 - Disaster Recovery Planning
-
----
-
-## 👤 Author
-
-**Darion Jones**  
-Azure Cloud Engineer
 
 ---
 
