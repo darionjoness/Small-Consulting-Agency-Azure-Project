@@ -1,4 +1,4 @@
-# Azure AZ-104 Capstone Project Portfolio 🚀
+# Azure AZ-104 Small Consulting Agency Project Portfolio 🚀
 
 This repository showcases my end-to-end Azure Administrator Project, demonstrating real-world cloud engineering skills across governance, networking, compute, storage, monitoring, automation, and cost optimization.
 
