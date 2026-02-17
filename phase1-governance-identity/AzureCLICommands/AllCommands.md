@@ -8,3 +8,5 @@ az group create --name rg-contoso-dev-eastus-001 --location eastus --tags Enviro
 az group create --name rg-contoso-shared-eastus-001 --location eastus --tags Environment=Production Owner=test@contoso.com CostCenter=CC-1001 Project=Contoso-Setup
 
 ```
+## Create Custom Role
+
