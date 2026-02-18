@@ -24,7 +24,7 @@ az role definition create --role-definition @vm-restart-read.json
 ```
 ```
 az policy definition create --name require-environment-tag --rules require-environment-tag.json --description "Require environment tag on all resources" --mode All
-az policy assignment create --name requirement-environment-tag --policy require-environment-tag --scope "subscriptions/971823fd-6d9e-4342-945e-70b0f7f54766"
+az policy assignment create --name requirement-environment-tag --policy require-environment-tag --scope "subscriptions/MY-SUBSCRIPTION-ID"
 ```
 
 
