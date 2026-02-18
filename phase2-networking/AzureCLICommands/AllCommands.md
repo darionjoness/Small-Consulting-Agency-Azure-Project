@@ -20,3 +20,5 @@ az network nsg create --resource-group rg-contoso-dev-eastus-001 --name nsg-app-
 az network nsg create --resource-group rg-contoso-dev-eastus-001 --name nsg-data-dev --tags Environment=Production Tier=Data
 az network nsg create --resource-group rg-contoso-dev-eastus-001 --name nsg-endpoints-dev --tags Environment=Production Tier="Private Endpoints"
 ```
+
+## Add NSG Rules
