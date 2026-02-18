@@ -34,4 +34,8 @@ az network nsg rule create --resource-group rg-contoso-dev-eastus-001 --nsg-name
 az network nsg rule create --resource-group rg-contoso-dev-eastus-001 --nsg-name nsg-app-dev --name Allow-HTTPS-Web-Tier --priority 100 --direction Inbound --access Allow --protocol Tcp --source-address-prefixes 10.0.1.0/24 --source-port-ranges "*" --destination-address-prefixes "*" --destination-port-ranges 443
 ```
 
+## Add NSG Rules for Data Tier
 
+```
+az network nsg rule create --resource-group rg-contoso-dev-eastus-001 --nsg-name nsg-data-dev --name Allow-HTTPS-App-Tier --priority 100 --direction Inbound --access Allow --protocol Tcp --source-address-prefixes 10.0.2.0/24 --source-port-ranges "*" --destination-address-prefixes "*" --destination-port-ranges 443
+```
