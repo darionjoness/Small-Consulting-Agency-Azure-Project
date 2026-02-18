@@ -24,5 +24,7 @@ az network nsg create --resource-group rg-contoso-dev-eastus-001 --name nsg-endp
 ## Add NSG Rules for Web Tier
 
 ```
-
+az network nsg rule create --resource-group rg-contoso-dev-eastus-001 --nsg-name nsg-web-dev --name Allow-HTTP --priority 100 --direction Inbound --access Allow --protocol Tcp --source-address-prefixes Internet --source-port-ranges "*" --destination-address-prefixes "*" --destination-port-ranges 80
+az network nsg rule create --resource-group rg-contoso-dev-eastus-001 --nsg-name nsg-web-dev --name Allow-HTTPS --priority 110 --direction Inbound --access Allow --protocol Tcp --source-address-prefixes Internet --source-p
+ort-ranges "*" --destination-address-prefixes "*" --destination-port-ranges 443
 ```
