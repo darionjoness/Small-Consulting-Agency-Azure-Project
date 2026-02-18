@@ -46,5 +46,10 @@ az network vnet subnet update --resource-group rg-contoso-dev-eastus-001 --vnet-
 az network vnet subnet update --resource-group rg-contoso-dev-eastus-001 --vnet-name vnet-contoso-dev --name snet-app --network-security-group nsg-app-dev
 az network vnet subnet update --resource-group rg-contoso-dev-eastus-001 --vnet-name vnet-contoso-dev --name snet-data --network-security-group nsg-data-dev
 ```
+## Create Private DNS Zone and link to Vnet
 
+```
+az network private-dns zone create --resource-group rg-contoso-dev-eastus-001 --name contoso.local --tags Environment=Development
+az network private-dns link vnet create --resource-group rg-contoso-dev-eastus-001 --zone-name contoso.local --name link-vnet-contoso --virtual-network vnet-contoso-dev --registration-enabled true --tags Environment=Development
+```
 
