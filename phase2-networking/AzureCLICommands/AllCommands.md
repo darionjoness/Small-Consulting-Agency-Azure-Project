@@ -27,3 +27,11 @@ az network nsg create --resource-group rg-contoso-dev-eastus-001 --name nsg-endp
 az network nsg rule create --resource-group rg-contoso-dev-eastus-001 --nsg-name nsg-web-dev --name Allow-HTTP --priority 100 --direction Inbound --access Allow --protocol Tcp --source-address-prefixes Internet --source-port-ranges "*" --destination-address-prefixes "*" --destination-port-ranges 80
 az network nsg rule create --resource-group rg-contoso-dev-eastus-001 --nsg-name nsg-web-dev --name Allow-HTTPS --priority 110 --direction Inbound --access Allow --protocol Tcp --source-address-prefixes Internet --source-port-ranges "*" --destination-address-prefixes "*" --destination-port-ranges 443
 ```
+
+## Add NSG Rules for App Tier
+
+```
+az network nsg rule create --resource-group rg-contoso-dev-eastus-001 --nsg-name nsg-app-dev --name Allow-HTTPS-Web-Tier --priority 100 --direction Inbound --access Allow --protocol Tcp --source-address-prefixes 10.0.1.0/24 --source-port-ranges "*" --destination-address-prefixes "*" --destination-port-ranges 443
+```
+
+
