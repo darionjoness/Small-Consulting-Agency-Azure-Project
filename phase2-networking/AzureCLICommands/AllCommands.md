@@ -39,3 +39,12 @@ az network nsg rule create --resource-group rg-contoso-dev-eastus-001 --nsg-name
 ```
 az network nsg rule create --resource-group rg-contoso-dev-eastus-001 --nsg-name nsg-data-dev --name Allow-HTTPS-App-Tier --priority 100 --direction Inbound --access Allow --protocol Tcp --source-address-prefixes 10.0.2.0/24 --source-port-ranges "*" --destination-address-prefixes "*" --destination-port-ranges 443
 ```
+## Associate NSGs with Subnets
+
+```
+az network vnet subnet update --resource-group rg-contoso-dev-eastus-001 --vnet-name vnet-contoso-dev --name snet-web --network-security-group nsg-web-dev
+az network vnet subnet update --resource-group rg-contoso-dev-eastus-001 --vnet-name vnet-contoso-dev --name snet-app --network-security-group nsg-app-dev
+az network vnet subnet update --resource-group rg-contoso-dev-eastus-001 --vnet-name vnet-contoso-dev --name snet-data --network-security-group nsg-data-dev
+```
+
+
