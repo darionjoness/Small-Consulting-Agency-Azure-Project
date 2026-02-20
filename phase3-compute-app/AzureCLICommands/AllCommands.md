@@ -47,3 +47,8 @@ zip -r deploy.zip .
 az webapp deployment source config-zip --name app-contoso-web-123456 --resource-group rg-contoso-dev-eastus-001 --src deploy.zip
 ```
 
+## Create Staging Slot
+```
+az webapp deployment slot create --name app-contoso-web-123456 --resource-group rg-contoso-dev-eastus-001 --slot staging
+```
+
