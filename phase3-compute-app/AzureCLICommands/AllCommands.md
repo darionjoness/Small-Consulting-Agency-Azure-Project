@@ -52,3 +52,19 @@ az webapp deployment source config-zip --name app-contoso-web-123456 --resource-
 az webapp deployment slot create --name app-contoso-web-123456 --resource-group rg-contoso-dev-eastus-001 --slot staging
 ```
 
+## Enable HTTPS Only
+```
+az webapp update --resource-group rg-contoso-dev-eastus-001 --name app-contoso-web-123456 --set httpsOnly=true
+```
+## Create Autoscale Setting
+```
+az monitor autoscale create --resource-group rg-contoso-dev-eastus-001 --resource asp-contoso-dev --resource-type "Microsoft.Web/serverfarms" --name autoscale-cpu --min-count 1 --max-count 3 --count 1 --tags Environment=Development
+```
+
+## Add Scale In and Scale Out Rules
+```
+az monitor autoscale rule create --resource-group rg-contoso-dev-eastus-001 --autoscale-name autoscale-cpu --scale out 1 --condition "CpuPercentage > 70 avg 10m" --resource-type Microsoft.Web/serverfarms --resource asp-contoso-dev
+az monitor autoscale rule create --resource-group rg-contoso-dev-eastus-001 --autoscale-name autoscale-cpu --scale in 1 --condition "CpuPercentage < 30 avg 10m" --resource-type Microsoft.Web/serverfarms --resource asp-contoso-dev
+```
+
+
