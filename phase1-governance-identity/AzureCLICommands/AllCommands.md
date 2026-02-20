@@ -20,7 +20,38 @@ az role definition create --role-definition @vm-restart-read.json
 ## Create and Assign Policy
 
 ```
-"if": { "allOf": [ { "field": "type", "notIn": [ "Microsoft.Network/networkSecurityGroups/securityRules", "Microsoft.Resources/deployments" ] }, { "anyOf": [ { "field": "tags.environment", "exists": "false" }, { "field": "tags.environment", "equals": "" } ] } ] }, "then": { "effect": "deny"```
+{
+  "mode": "All",
+  "policyRule": {
+    "if": {
+      "allOf": [
+        {
+          "field": "type",
+          "notIn": [
+            "Microsoft.Network/networkSecurityGroups/securityRules",
+            "Microsoft.Resources/deployments",
+            "Microsoft.Web/sites/slots"
+          ]
+        },
+        {
+          "anyOf": [
+            {
+              "field": "tags.environment",
+              "exists": "false"
+            },
+            {
+              "field": "tags.environment",
+              "equals": ""
+            }
+          ]
+        }
+      ]
+    },
+    "then": {
+      "effect": "deny"
+    }
+  }
+}
 ```
 ```
 az policy definition create --name require-environment-tag --rules require-environment-tag.json --description "Require environment tag on all resources" --mode All
