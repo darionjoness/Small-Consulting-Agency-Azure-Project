@@ -66,5 +66,9 @@ az monitor autoscale create --resource-group rg-contoso-dev-eastus-001 --resourc
 az monitor autoscale rule create --resource-group rg-contoso-dev-eastus-001 --autoscale-name autoscale-cpu --scale out 1 --condition "CpuPercentage > 70 avg 10m" --resource-type Microsoft.Web/serverfarms --resource asp-contoso-dev
 az monitor autoscale rule create --resource-group rg-contoso-dev-eastus-001 --autoscale-name autoscale-cpu --scale in 1 --condition "CpuPercentage < 30 avg 10m" --resource-type Microsoft.Web/serverfarms --resource asp-contoso-dev
 ```
-
+## Create Storage Account for Function App
+```
+az storage account create --resource-group rg-contoso-dev-eastus-001 --name stcontoso123456 --location eastus --sku Standard_LRS --tags Environment=Development
+```
+## Create Function App
 
