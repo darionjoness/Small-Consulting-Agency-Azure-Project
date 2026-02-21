@@ -74,4 +74,10 @@ az storage account create --resource-group rg-contoso-dev-eastus-001 --name stco
 ```
 az functionapp create --resource-group rg-contoso-dev-eastus-001 --consumption-plan-location eastus --name contoso-func-app-123 --storage-account stcontoso123456 --runtime python --runtime-version 3.10 --os-type linux --tags Environment=Development
 ```
+## Create HTTP Trigger Function
+```
+func new --name HttpReader --template "HTTP trigger"
+```
+
+
 
