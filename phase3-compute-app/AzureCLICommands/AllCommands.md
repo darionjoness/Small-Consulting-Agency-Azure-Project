@@ -78,6 +78,9 @@ az functionapp create --resource-group rg-contoso-dev-eastus-001 --consumption-p
 ```
 func new --name HttpReader --template "HTTP trigger"
 ```
-
+## Publish Function App to Azure
+```
+func azure functionapp publish contoso-func-app-123
+```
 
 
