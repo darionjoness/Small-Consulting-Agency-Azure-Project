@@ -95,7 +95,37 @@ az network private-endpoint create --resource-group rg-contoso-dev-eastus-001 --
 ```
 ## Create DNS Zone Group
 ```
-
+az network private-endpoint dns-zone-group create --resource-group rg-contoso-dev-eastus-001 --endpoint-name st-pe --name st-pe-dnszonegroup --private-dns-zone contoso.local --zone-name contoso.local
+```
+## Create Lifecycle management JSON file
+```
+cat << 'EOF' > lifecycle.json
+{
+  "rules": [
+    {
+      "enabled": true,
+      "name": "cool-archive-rule",
+      "type": "Lifecycle",
+      "definition": {
+        "filters": {
+          "blobTypes": [ "blockBlob" ],
+          "prefixMatch": [ "" ]
+        },
+        "actions": {
+          "baseBlob": {
+            "tierToCool": { "daysAfterModificationGreaterThan": 30 },
+            "tierToArchive": { "daysAfterModificationGreaterThan": 90 }
+          }
+        }
+      }
+    }
+  ]
+}
+EOF
+```
+## Apply Lifecycle Management Policy
+```
+az storage account management-policy create --account-name stcontoso123456 --resource-group rg-contoso-dev-eastus-001 --policy @lifecycle.json
 ```
 
 
