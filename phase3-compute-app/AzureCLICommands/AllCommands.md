@@ -82,5 +82,20 @@ func new --name HttpReader --template "HTTP trigger"
 ```
 func azure functionapp publish contoso-func-app-123
 ```
+## Update Storage Account To Disable Public Access
+```
+az storage account update --resource-group rg-contoso-dev-eastus-001 --name stcontoso123456 --public-network-access Disabled
+```
+## Create Private Endpoint
+```
+ST_ID=$(az storage account show --resource-group rg-contoso-dev-eastus-001 --name stcontoso123456 --query id -o tsv)
+```
+```
+az network private-endpoint create --resource-group rg-contoso-dev-eastus-001 --name st-pe --vnet-name vnet-contoso-dev --subnet snet-endpoints --private-connection-resource-id $ST_ID --group-id blob --connection-name st-pe-conn --tags Environment=Development
+```
+## Create DNS Zone Group
+```
+
+```
 
 
