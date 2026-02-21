@@ -70,3 +70,8 @@ az monitor autoscale rule create --resource-group rg-contoso-dev-eastus-001 --au
 ```
 az storage account create --resource-group rg-contoso-dev-eastus-001 --name stcontoso123456 --location eastus --sku Standard_LRS --tags Environment=Development
 ```
+## Create Function App
+```
+az functionapp create --resource-group rg-contoso-dev-eastus-001 --consumption-plan-location eastus --name contoso-func-app-123 --storage-account stcontoso123456 --runtime python --runtime-version 3.10 --os-type linux --tags Environment=Development
+```
+
