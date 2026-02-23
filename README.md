@@ -17,10 +17,10 @@ This project simulates a full production-ready Azure environment for **Contoso C
 
 | Folder | Description |
 |--------|-------------|
-| `phase1-governance-identity/` | Resource groups, tags, RBAC, policies |
-| `phase2-networking/` | VNets, subnets, NSGs, DNS, routing |
-| `phase3-compute-app/` | App Service, Function App, Storage, private endpoints |
-| `phase4-monitoring-alerting/` | Log Analytics, alerts, dashboards, KQL |
+| [`phase1-governance-identity/`](https://github.com/darionjoness/Small-Consulting-Agency-Azure-Project/tree/main/phase1-governance-identity) | Resource groups, tags, RBAC, policies |
+| [`phase2-networking/`](https://github.com/darionjoness/Small-Consulting-Agency-Azure-Project/tree/main/phase2-networking) | VNets, subnets, NSGs, DNS, routing |
+| [`phase3-compute-app/`](https://github.com/darionjoness/Small-Consulting-Agency-Azure-Project/tree/main/phase3-compute-app) | App Service, Function App, Storage, private endpoints |
+| [`phase4-monitoring-alerting/`](https://github.com/darionjoness/Small-Consulting-Agency-Azure-Project/tree/main/phase4-monitoring-alerting) | Log Analytics, alerts, dashboards, KQL |
 
 ---
 
