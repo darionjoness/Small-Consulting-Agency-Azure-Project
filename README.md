@@ -10,7 +10,6 @@ This project simulates a full production-ready Azure environment for **Contoso C
 - Monitoring & Alerting  
 - Governance & Compliance  
 - Infrastructure as Code  
-- CI/CD Automation  
 
 ---
 
