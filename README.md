@@ -44,9 +44,6 @@ This project builds a complete **three-tier Azure environment**:
 - Storage Security (Private Endpoints)
 - Monitoring (Log Analytics, KQL, Alerts)
 - Infrastructure as Code (Azure CLI)
-- Cost Optimization & Advisor Review
-- Disaster Recovery Planning
-
 ---
 
 ## 📜 License
