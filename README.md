@@ -17,10 +17,10 @@ This project simulates a full production-ready Azure environment for **Contoso C
 
 | Folder | Description |
 |--------|-------------|
-| `az104-capstone/phase1-governance-identity/` | Resource groups, tags, RBAC, policies |
-| `az104-capstone/phase2-networking/` | VNets, subnets, NSGs, DNS, routing |
-| `az104-capstone/phase3-compute-app/` | App Service, Function App, Storage, private endpoints |
-| `az104-capstone/phase4-monitoring-alerting/` | Log Analytics, alerts, dashboards, KQL |
+| `phase1-governance-identity/` | Resource groups, tags, RBAC, policies |
+| `phase2-networking/` | VNets, subnets, NSGs, DNS, routing |
+| `phase3-compute-app/` | App Service, Function App, Storage, private endpoints |
+| `phase4-monitoring-alerting/` | Log Analytics, alerts, dashboards, KQL |
 
 ---
 
