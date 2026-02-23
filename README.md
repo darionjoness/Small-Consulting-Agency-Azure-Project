@@ -28,7 +28,7 @@ This project simulates a full production-ready Azure environment for **Contoso C
 
 This project builds a complete **three-tier Azure environment**:
 
-- **Web Tier** – App Service + App Gateway (WAF)  
+- **Web Tier** – App Service
 - **App Tier** – Azure Function App  
 - **Data Tier** – Storage Account with Private Endpoint  
 - **Monitoring** – Log Analytics + Alerts + Dashboard  
