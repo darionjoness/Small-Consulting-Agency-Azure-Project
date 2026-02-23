@@ -19,5 +19,7 @@ az storage account create --resource-group rg-contoso-dev-eastus-001 --name stco
 az monitor diagnostic-settings create --name diag-webapp --resource $WEBAPP_ID --workspace $LAW_ID --logs '[{"category":"AppServiceHTTPLogs", "enabled":true}, {"category": "AppServiceConsoleLogs", "enabled":true}]' --metrics '[{"category": "AllMetrics","enabled":true}]'
 ```
 ## Create Storage Account Diagnostic Settings
-
+```
+az monitor diagnostic-settings create --name diag-storage-blob --resource $BLOB_ID --workspace $LAW_ID --metrics '[{"category":"Transaction","enabled":true}]'
+```
 
