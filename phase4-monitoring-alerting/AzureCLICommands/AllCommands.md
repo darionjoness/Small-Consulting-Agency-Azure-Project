@@ -34,3 +34,31 @@ az monitor metrics alert create --name alert-httperrors --resource-group rg-cont
 ```
 az monitor metrics alert create --name alert-storage-availability --resource-group rg-contoso-dev-eastus-001 --scopes $STORAGE_ID --condition "avg Availability < 99" --window-size 5m --severity 1 --description "Storage availability below 99%"d
 ```
+## KQL Queries
+### Count of errors in last 24 hours
+```
+AppTraces
+| where TimeGenerated > ago(24h)
+| where SeverityLevel >= 3
+| summarize ErrorCount = count() by bin(TimeGenerated, 1h)
+| order by TimeGenerated asc
+```
+### Requests by Response Code
+```
+AppRequests
+| where TimeGenerated > ago(1h)
+| summarize 
+    Success = countif(ResultCode startswith "2"),
+    ClientErrors = countif(ResultCode startswith "4"),
+    ServerErrors = countif(ResultCode startswith "5")
+```
+### Average Request Duration
+```
+AppRequests
+| where TimeGenerated > ago(24h)
+| summarize AvgDurationMs = avg(DurationMs) by bin(TimeGenerated, 30m)
+| order by TimeGenerated asc
+```
+
+
+
