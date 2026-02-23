@@ -39,23 +39,6 @@ This project builds a complete **three-tier Azure environment**:
 
 ---
 
-## 📸 Deliverables (Screenshots to Add)
-
-You will add screenshots for:
-
-- Resource groups with tags  
-- Policy compliance  
-- NSG rules  
-- Effective routes  
-- Web App + Function App URLs  
-- Monitoring dashboard  
-- Alerts firing  
-- Cleanup verification  
-
-Each phase folder includes a `/screenshots` directory.
-
----
-
 ## 🧪 Skills Demonstrated
 
 - Azure Governance (RBAC, Policies, Tags)
